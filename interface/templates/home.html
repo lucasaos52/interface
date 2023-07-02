@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>PREVISÃO DE CUSTOS</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+    
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Navbar Link</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="#">Navbar Link</a></li>
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">PREVISÃO DE CUSTOS</h1>
+      <div class="row center">
+        <br>
+        </h5>
+      </div>
+
+<div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name" style="font-size: 20px"><b>Idade</b></label>
+            <br>
+            <input placeholder="Idade" name="Idade" id="Idade" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name" style="font-size: 20px"><b>GENERO</b></label>
+            <br>
+            <input id="_name" name="GENERO" placeholder="0 - MASCULINO/1 - FEMININO" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="last_name" style="font-size: 20px"><b>IMC</b></label>
+              <br>
+            <input id="IMC" name="IMC" placeholder="IMC"  type="text" class="validate">
+          </div>
+
+        <div class="input-field col s4">
+
+            <label for="last_name" style="font-size: 20px"><b>FILHOS</b></label>
+              <br>
+            <input id="FILHOS" name="FILHOS" placeholder="0 se nenhum"  type="text" class="validate">
+  
+          </div>
+
+        <div class="input-field col s4">
+            <label for="FUMANTE" style="font-size: 20px"><b>FUMANTE?</b></label>
+            <br>
+            <input id="FUMANTE" name="FUMANTE" placeholder="1 - sim/0 - Não" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="region" style="font-size: 20px"><b>REGIÃO</b></label>
+            <br>
+            <input id="region" name="region" placeholder="0-N/1-S/2-L/3-O" type="text" class="validate">
+        </div>
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-dark lamber lighten-1">ESTIMAR</button>
+      </div>
+    </form>
+      </div>
+      <div class="dark-text">
+      <br>
+        <h4>{{pred}}</h4><br>
+      </div>
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+      </div>
+      
+      <div class="col l3 s12">
+        <h5 class="white-text">Settings</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div> 
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">LinkedIn</a></li>
+          <li><a class="white-text" href="#!">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    </div>
+  </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
